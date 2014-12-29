@@ -235,3 +235,13 @@ figure.floatcenter, .align-center {
 #content > article h2 {
     color: #393;
 }
+
+/* Prevent the navigation header covering contents when jump w/ Anchor Link */
+[id]:before {
+    content: " ";
+    display: block;
+    height: 50px;
+    margin-top: -50px;
+    visibility: hidden;
+}
+
