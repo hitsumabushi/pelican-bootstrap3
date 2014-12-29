@@ -228,8 +228,8 @@ figure.floatcenter, .align-center {
  * - content headers
 */
 .toc {
-    border: 4px dashed #FFa;
-    background: #FFe;
+    border: 4px dashed #FF7FFF;
+    background: #FFF7F3;
 }
 
 #content > article h2 {
