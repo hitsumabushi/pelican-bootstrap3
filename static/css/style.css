@@ -225,13 +225,13 @@ figure.floatcenter, .align-center {
 /*
  * Add My CSS
  * - TOC Box
- * - content headers
+ * - Anchor links
+ * - Table
 */
 .toc {
     border: 4px dashed #FF7FFF;
     background: #FFF7F3;
 }
-
 #content > article h2 {
     color: #393;
 }
@@ -243,5 +243,28 @@ figure.floatcenter, .align-center {
     height: 50px;
     margin-top: -50px;
     visibility: hidden;
+}
+
+/* Table style */
+article table {
+     border-collapse: collapse;
+     width: 100%;
+     margin-bottom: 10px;
+}
+article th {
+     background-color: #eeeeee;
+     border: 1px solid #b9b9b9;
+     color: #333333;
+     padding: 6px;
+     text-align: left;
+     vertical-align: top;
+     width: 25%;
+     min-width: 100px;
+}
+article td {
+     background-color: #ffffff;
+     border: 1px solid #b9b9b9;
+     padding: 6px;
+     text-align: left;
 }
 
