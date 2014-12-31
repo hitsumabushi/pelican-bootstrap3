@@ -224,15 +224,19 @@ figure.floatcenter, .align-center {
 
 /*
  * Add My CSS
- * - TOC Box
- * - Anchor links
- * - Table
 */
+/* TOC tree */
 .toc {
     border: 2px solid #879dc6;
     padding: 10px 0;
 }
 
+/* top page titles */
+article h2.caption-item {
+    color: #0c52a0;
+    font-weight: bold;
+}
+/* h1-h6 */
 #content > article h1 {
     color: #0c52a0;
     font-weight: bold;
