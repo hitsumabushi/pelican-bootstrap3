@@ -300,3 +300,8 @@ article td {
      text-align: left;
 }
 
+/* Gist coloring */
+.gist .line-data .line-pre {
+     color: #000;
+}
+
