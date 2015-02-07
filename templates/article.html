@@ -76,8 +76,7 @@
                        rel="bookmark"
                        title="Permalink to {{ article.title|striptags }}">
                         {{ article.title }}
-                      </a>
-                      <a href="http://b.hatena.ne.jp/entry/{{ SITEURL }}/{{ article.url }}"><img src="http://b.hatena.ne.jp/entry/image/large/{{ SITEURL }}/{{ article.url }}"></a>
+                    </a>
                 </h1>
             </header>
             <div class="entry-content">
@@ -96,19 +95,6 @@
             {% include 'includes/comments.html' %}
         </article>
     </section>
-
-    <!-- Hatena Star -->
-    <script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
-    <script type="text/javascript">
-      Hatena.Star.SiteConfig = { entryNodes: {
-          'header.page-header': {
-                uri: 'h1 a',
-                title: 'h1',
-                container: 'h1'
-             }
-          }
-      };
-    </script>
 
 {% endblock %}
 
