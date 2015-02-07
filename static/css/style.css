@@ -305,3 +305,8 @@ article td {
      color: #000;
 }
 
+/* Link */
+.fa-link {
+  vertical-align: super;
+  font-size: 0.5em;
+}

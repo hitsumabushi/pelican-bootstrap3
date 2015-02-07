@@ -1,3 +1,4 @@
 // Add link picture
-$("article a").after("<i class=\"fa fa-link\"></i>");
+var article_block=$("article");
+$("a:not([href^='http://www.hitsumabushi.org']):not([href^='#'])", article_block).after("<i class=\"fa fa-link\"></i>");
 
