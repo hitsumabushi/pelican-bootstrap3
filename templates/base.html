@@ -148,6 +148,9 @@
                 </form></span>
               </li>
             {% endif %}
+            {% if GOOGLE_SITE_SEARCH %}
+              <li>{% include 'includes/google_site_search.html' %}</li>
+            {% endif %}
               <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
