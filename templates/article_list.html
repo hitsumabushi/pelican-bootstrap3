@@ -1,15 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
+<div itemscope itemtype="http://schema.org/Blog" itemref="copyright">
     {% if articles %}
         {% for article in (articles_page.object_list if articles_page else articles) %}
-            <article>
-                <h2 class="caption-item"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+            <article itemprop="blogPost" itemscope="http://schema.org/BlogPosting" itemref="copyright">
+                <h2 class="caption-item">
+                  <a href="{{ SITEURL }}/{{ article.url }}" itemprop="contentLocation url"><span itemprop="name">{{ article.title }}</span></a>
+                </h2>
                 {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
                     <div class="well well-sm">
                         {% include "includes/article_info.html" %}
                     </div>
                 {% endif %}
-                <div class="summary">{{ article.summary }}
+                <div class="summary" itemprop="description">{{ article.summary }}
                     {% include 'includes/comment_count.html' %}
                     <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
                 </div>
@@ -19,4 +22,5 @@
     {% endif %}
 
     {% include 'includes/pagination.html' %}
+</div>
 {% endblock content %}

@@ -69,13 +69,14 @@
 
 {% block content %}
     <section id="content">
-        <article>
+        <article itemscope itemtype="http://schema.org/BlogPosting" itemref="copyright">
             <header class="page-header">
-                <h1>
+                <h1 itemprop="name">
                     <a href="{{ SITEURL }}/{{ article.url }}"
                        rel="bookmark"
-                       title="Permalink to {{ article.title|striptags }}">
-                        {{ article.title }}
+                       title="Permalink to {{ article.title|striptags }}"
+                       itemprop="url">
+                       {{ article.title }}
                     </a>
                 </h1>
             </header>
@@ -86,7 +87,7 @@
                         {% include "includes/social_buttons.html" %}
                     </div>
                 </div>
-                <div id="article_content">
+                <div id="article_content" itemprop="articleBody">
                   {{ article.content }}
                 </div>
             </div>
@@ -98,7 +99,6 @@
             {% include 'includes/comments.html' %}
         </article>
     </section>
-
 {% endblock %}
 
 {% block scripts %}
