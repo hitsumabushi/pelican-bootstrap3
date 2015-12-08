@@ -87,14 +87,6 @@
                         {% include "includes/social_buttons.html" %}
                     </div>
                 </div>
-
-                <!-- TOC -->
-                {% if article.toc %}
-                <div class="toc">
-                    {{article.toc}}
-                </div>
-                {% endif %}
-
                 <div id="article_content" itemprop="articleBody">
                   {{ article.content }}
                 </div>
