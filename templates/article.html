@@ -84,7 +84,9 @@
                 <div class="panel">
                     <div class="panel-body">
                         {% include "includes/article_info.html" %}
+                        {% if not NOT_USE_SOCIAL %}
                         {% include "includes/social_buttons.html" %}
+                        {% endif %}
                     </div>
                 </div>
                 <div id="article_content" itemprop="articleBody">

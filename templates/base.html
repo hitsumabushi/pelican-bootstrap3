@@ -51,7 +51,9 @@
     {% endif %}
 
     {# Twitter Cards tags #}
+    {% if not NOT_USE_TWITTER %}
     {% include 'includes/twitter_cards.html' %}
+    {% endif %}
 
     <!-- Bootstrap -->
     {% if BOOTSTRAP_THEME %}
@@ -209,7 +211,9 @@
 {% include 'includes/disqus_script.html' %}
 {# include 'includes/ga.html' #}
 {% include 'includes/piwik.html' %}
+{% if not NOT_USE_SOCIAL %}
 {% include 'includes/social_buttons_js.html' %}
+{% endif %}
 
 {% block scripts %}{% endblock %}
 </body>
