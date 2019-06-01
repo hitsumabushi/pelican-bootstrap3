@@ -89,6 +89,11 @@
                         {% endif %}
                     </div>
                 </div>
+                {% if article.toc %}
+                    <nav class="toc">
+                    {{ article.toc }}
+                    </nav>
+                {% endif %}
                 <div id="article_content" itemprop="articleBody">
                   {{ article.content }}
                 </div>
